@@ -39,6 +39,11 @@ func InMemoryService() Service {
 	}
 }
 
+type RawService interface {
+	Service
+	DeleteEvent()
+}
+
 // CreateRequest represents a request to create a session.
 type CreateRequest struct {
 	AppName string
@@ -90,4 +95,11 @@ type DeleteRequest struct {
 	AppName   string
 	UserID    string
 	SessionID string
+}
+
+type DeleteEventRequest struct {
+	AppName   string
+	UserID    string
+	SessionID string
+	EventID   string
 }

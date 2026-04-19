@@ -43,6 +43,35 @@ type inMemoryService struct {
 	appState  map[string]stateMap
 }
 
+type rawInMemoryService struct {
+	inMemoryService
+}
+
+func (s *rawInMemoryService) DeleteEvent(ctx context.Context, req *DeleteEventRequest) error {
+	appName, userID, sessionID, eventID := req.AppName, req.UserID, req.SessionID, req.EventID
+	if appName == "" || userID == "" || sessionID == "" {
+		return fmt.Errorf("app_name, user_id, session_id, event_id are required, got app_name: %q, user_id: %q, session_id: %q, event_id %q", appName, userID, sessionID, eventID)
+	}
+	s.mu.Lock()
+	sess, found := s.sessions.Get(sessionID)
+	if !found {
+		return fmt.Errorf("session_id %q not found")
+	}
+	var index *int
+
+	for x := range sess.events {
+		if sess.events[x].ID == eventID {
+			index = &x
+		}
+	}
+	if index == nil {
+		return fmt.Errorf("event_id %q not found", eventID)
+	}
+	copy(sess.events[*index:], sess.events[*index+1:])
+	sess.events = sess.events[:len(sess.events)-1]
+	return nil
+}
+
 func (s *inMemoryService) Create(ctx context.Context, req *CreateRequest) (*CreateResponse, error) {
 	if req.AppName == "" || req.UserID == "" {
 		return nil, fmt.Errorf("app_name and user_id are required, got app_name: %q, user_id: %q", req.AppName, req.UserID)
