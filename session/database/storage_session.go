@@ -44,7 +44,7 @@ func (storageSession) TableName() string {
 }
 
 // Helper to map from internal struct to GORM struct
-func createStorageSession(s *localSession) (*storageSession, error) {
+func createStorageSession(s *LocalSession) (*storageSession, error) {
 	return &storageSession{
 		UserID:     s.userID,
 		AppName:    s.appName,
@@ -56,8 +56,8 @@ func createStorageSession(s *localSession) (*storageSession, error) {
 }
 
 // Helper to map from GORM struct to internal struct
-func createSessionFromStorageSession(storage *storageSession) (*localSession, error) {
-	return &localSession{
+func createSessionFromStorageSession(storage *storageSession) (*LocalSession, error) {
+	return &LocalSession{
 		appName:   storage.AppName,
 		userID:    storage.UserID,
 		sessionID: storage.ID,

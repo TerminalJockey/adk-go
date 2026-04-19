@@ -75,7 +75,7 @@ func (s *vertexAiService) Get(ctx context.Context, req *session.GetRequest) (*se
 	g, gCtx := errgroup.WithContext(ctx)
 
 	var (
-		sess   *localSession
+		sess   *LocalSession
 		events []*session.Event
 	)
 
@@ -134,7 +134,7 @@ func (s *vertexAiService) AppendEvent(ctx context.Context, sess session.Session,
 	if err != nil {
 		return fmt.Errorf("failed to append event: %w", err)
 	}
-	sessInt, ok := sess.(*localSession)
+	sessInt, ok := sess.(*LocalSession)
 	if !ok {
 		return fmt.Errorf("AppendEvent for Vertex AI service only supports sessions created by it, got %T", sess)
 	}

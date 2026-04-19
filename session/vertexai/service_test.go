@@ -55,28 +55,28 @@ func Test_vertexaiService(t *testing.T) {
 func Test_vertexaiService_AppendEvent_StructuralValidation(t *testing.T) {
 	tests := []struct {
 		name    string
-		session *localSession
+		session *LocalSession
 		event   *session.Event
 		wantErr bool
 		offline bool
 	}{
 		{
 			name:    "missing_session_id",
-			session: &localSession{appName: EngineId, userID: UserID},
+			session: &LocalSession{appName: EngineId, userID: UserID},
 			event:   &session.Event{},
 			wantErr: true,
 			offline: true,
 		},
 		{
 			name:    "nil_event",
-			session: &localSession{appName: EngineId2, userID: "user2", sessionID: "session2"},
+			session: &LocalSession{appName: EngineId2, userID: "user2", sessionID: "session2"},
 			event:   nil,
 			wantErr: true,
 			offline: true,
 		},
 		{
 			name:    "missing_author",
-			session: &localSession{appName: EngineId2, userID: "user2", sessionID: "session2"},
+			session: &LocalSession{appName: EngineId2, userID: "user2", sessionID: "session2"},
 			event: &session.Event{
 				Timestamp:    time.Now(),
 				InvocationID: uuid.NewString(),
@@ -85,7 +85,7 @@ func Test_vertexaiService_AppendEvent_StructuralValidation(t *testing.T) {
 		},
 		{
 			name:    "missing_invocation_id",
-			session: &localSession{appName: EngineId2, userID: "user2", sessionID: "session2"},
+			session: &LocalSession{appName: EngineId2, userID: "user2", sessionID: "session2"},
 			event: &session.Event{
 				Timestamp: time.Now(),
 				Author:    UserID,

@@ -25,8 +25,8 @@ import (
 	"github.com/TerminalJockey/adk-go/session"
 )
 
-// TODO localSession is identical to session.session. Move to sessioninternal
-type localSession struct {
+// TODO LocalSession is identical to session.session. Move to sessioninternal
+type LocalSession struct {
 	appName   string
 	userID    string
 	sessionID string
@@ -38,37 +38,37 @@ type localSession struct {
 	updatedAt time.Time
 }
 
-func (s *localSession) ID() string {
+func (s *LocalSession) ID() string {
 	return s.sessionID
 }
 
-func (s *localSession) AppName() string {
+func (s *LocalSession) AppName() string {
 	return s.appName
 }
 
-func (s *localSession) UserID() string {
+func (s *LocalSession) UserID() string {
 	return s.userID
 }
 
-func (s *localSession) State() session.State {
+func (s *LocalSession) State() session.State {
 	return &state{
 		mu:    &s.mu,
 		state: s.state,
 	}
 }
 
-func (s *localSession) Events() session.Events {
+func (s *LocalSession) Events() session.Events {
 	return events(s.events)
 }
 
-func (s *localSession) LastUpdateTime() time.Time {
+func (s *LocalSession) LastUpdateTime() time.Time {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
 
 	return s.updatedAt
 }
 
-func (s *localSession) appendEvent(event *session.Event) error {
+func (s *LocalSession) appendEvent(event *session.Event) error {
 	if event.Partial {
 		return nil
 	}
@@ -77,7 +77,7 @@ func (s *localSession) appendEvent(event *session.Event) error {
 	defer s.mu.Unlock()
 
 	if err := updateSessionState(s, event); err != nil {
-		return fmt.Errorf("failed to update localSession state: %w", err)
+		return fmt.Errorf("failed to update LocalSession state: %w", err)
 	}
 	processedEvent := trimTempDeltaState(event)
 	s.events = append(s.events, processedEvent)
@@ -169,7 +169,7 @@ func trimTempDeltaState(event *session.Event) *session.Event {
 }
 
 // updateSessionState updates the session state based on the event state delta.
-func updateSessionState(sess *localSession, event *session.Event) error {
+func updateSessionState(sess *LocalSession, event *session.Event) error {
 	if event.Actions.StateDelta == nil {
 		return nil // Nothing to do
 	}
@@ -185,7 +185,7 @@ func updateSessionState(sess *localSession, event *session.Event) error {
 }
 
 var (
-	_ session.Session = (*localSession)(nil)
+	_ session.Session = (*LocalSession)(nil)
 	_ session.Events  = (*events)(nil)
 	_ session.State   = (*state)(nil)
 )

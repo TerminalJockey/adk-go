@@ -82,7 +82,7 @@ func (s *databaseService) Create(ctx context.Context, req *session.CreateRequest
 	if stateMap == nil {
 		stateMap = make(map[string]any)
 	}
-	val := &localSession{
+	val := &LocalSession{
 		appName:   req.AppName,
 		userID:    req.UserID,
 		sessionID: sessionID,
@@ -331,7 +331,7 @@ func (s *databaseService) AppendEvent(ctx context.Context, curSession session.Se
 	// Truncate timestamp to microsecond precision to match database precision and prevent rounding errors.
 	event.Timestamp = event.Timestamp.Truncate(time.Microsecond)
 
-	sess, ok := curSession.(*localSession)
+	sess, ok := curSession.(*LocalSession)
 	if !ok {
 		return fmt.Errorf("unexpected session type %T", sess)
 	}
@@ -355,7 +355,7 @@ func (s *databaseService) AppendEvent(ctx context.Context, curSession session.Se
 
 // applyEvent fetches the session, validates it, applies state changes from an
 // event, and saves the event atomically.
-func (s *databaseService) applyEvent(ctx context.Context, session *localSession, event *session.Event) error {
+func (s *databaseService) applyEvent(ctx context.Context, session *LocalSession, event *session.Event) error {
 	// Wrap database operations in a single transaction.
 	err := s.db.WithContext(ctx).Transaction(func(tx *gorm.DB) error {
 		// Fetch the session object from storage.

@@ -62,7 +62,7 @@ func (c *vertexAiClient) Close() error {
 	return c.rpcClient.Close()
 }
 
-func (c *vertexAiClient) createSession(ctx context.Context, req *session.CreateRequest) (*localSession, error) {
+func (c *vertexAiClient) createSession(ctx context.Context, req *session.CreateRequest) (*LocalSession, error) {
 	pbSession := &aiplatformpb.Session{
 		UserId: req.UserID,
 	}
@@ -107,7 +107,7 @@ func isNotFoundError(err error) bool {
 
 // TODO replace with LRO wait when it's fixed
 // waitForOperation polls the LRO until it is done.
-func (c *vertexAiClient) waitForOperation(ctx context.Context, appName, userId, sessionID string) (*localSession, error) {
+func (c *vertexAiClient) waitForOperation(ctx context.Context, appName, userId, sessionID string) (*LocalSession, error) {
 	const (
 		maxRetries = 10
 		baseDelay  = time.Second
@@ -132,7 +132,7 @@ func (c *vertexAiClient) waitForOperation(ctx context.Context, appName, userId, 
 	return nil, fmt.Errorf("LRO '%s' timed out after %d retries", sessionID, maxRetries)
 }
 
-func (c *vertexAiClient) getSession(ctx context.Context, req *session.GetRequest) (*localSession, error) {
+func (c *vertexAiClient) getSession(ctx context.Context, req *session.GetRequest) (*LocalSession, error) {
 	reasoningEngine, err := c.getReasoningEngineID(req.AppName)
 	if err != nil {
 		return nil, err
@@ -152,7 +152,7 @@ func (c *vertexAiClient) getSession(ctx context.Context, req *session.GetRequest
 		return nil, fmt.Errorf("session %s does not belong to user %s", req.SessionID, req.UserID)
 	}
 
-	return &localSession{
+	return &LocalSession{
 		appName:   req.AppName,
 		userID:    req.UserID,
 		sessionID: req.SessionID,
@@ -187,7 +187,7 @@ func (c *vertexAiClient) listSessions(ctx context.Context, req *session.ListRequ
 		if err != nil {
 			return nil, fmt.Errorf("error creating session list: %w", err)
 		}
-		session := &localSession{
+		session := &LocalSession{
 			appName:   req.AppName,
 			userID:    rpcResp.UserId,
 			sessionID: id,
