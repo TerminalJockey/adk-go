@@ -61,18 +61,6 @@ func (s *LocalSession) Events() session.Events {
 	return events(s.events)
 }
 
-type RawEvents struct {
-	Events []*session.Event
-	Mutex  *sync.RWMutex
-}
-
-func (s *LocalSession) GetRawEvents() RawEvents {
-	return RawEvents{
-		Events: s.events,
-		Mutex:  &s.mu,
-	}
-}
-
 func (s *LocalSession) LastUpdateTime() time.Time {
 	s.mu.RLock()
 	defer s.mu.RUnlock()

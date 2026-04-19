@@ -22,10 +22,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/TerminalJockey/adk-go/session"
 	"github.com/google/uuid"
 	"gorm.io/gorm"
-
-	"github.com/TerminalJockey/adk-go/session"
 )
 
 // databaseService is an database implementation of sessionService.Service.
