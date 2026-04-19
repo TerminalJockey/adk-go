@@ -26,14 +26,14 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/agent"
-	"google.golang.org/adk/agent/llmagent"
+	"github.com/TerminalJockey/adk-go/agent"
+	"github.com/TerminalJockey/adk-go/agent/llmagent"
 	"google.golang.org/adk/internal/testutil"
 	"google.golang.org/adk/model"
 	"google.golang.org/adk/model/gemini"
-	"google.golang.org/adk/session"
-	"google.golang.org/adk/tool"
-	"google.golang.org/adk/tool/functiontool"
+	"github.com/TerminalJockey/adk-go/session"
+	"github.com/TerminalJockey/adk-go/tool"
+	"github.com/TerminalJockey/adk-go/tool/functiontool"
 )
 
 const modelName = "gemini-2.5-flash"

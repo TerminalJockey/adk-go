@@ -24,8 +24,8 @@ import (
 
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/agent"
-	"google.golang.org/adk/artifact"
+	"github.com/TerminalJockey/adk-go/agent"
+	"github.com/TerminalJockey/adk-go/artifact"
 	"google.golang.org/adk/internal/agent/parentmap"
 	"google.golang.org/adk/internal/agent/runconfig"
 	artifactinternal "google.golang.org/adk/internal/artifact"
@@ -34,10 +34,10 @@ import (
 	imemory "google.golang.org/adk/internal/memory"
 	"google.golang.org/adk/internal/plugininternal"
 	"google.golang.org/adk/internal/utils"
-	"google.golang.org/adk/memory"
+	"github.com/TerminalJockey/adk-go/memory"
 	"google.golang.org/adk/model"
 	"google.golang.org/adk/plugin"
-	"google.golang.org/adk/session"
+	"github.com/TerminalJockey/adk-go/session"
 )
 
 // Config is used to create a [Runner].

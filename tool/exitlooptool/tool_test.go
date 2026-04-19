@@ -21,12 +21,12 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/agent"
-	"google.golang.org/adk/agent/llmagent"
-	"google.golang.org/adk/agent/workflowagents/loopagent"
+	"github.com/TerminalJockey/adk-go/agent"
+	"github.com/TerminalJockey/adk-go/agent/llmagent"
+	"github.com/TerminalJockey/adk-go/agent/workflowagents/loopagent"
 	"google.golang.org/adk/internal/testutil"
-	"google.golang.org/adk/tool"
-	"google.golang.org/adk/tool/exitlooptool"
+	"github.com/TerminalJockey/adk-go/tool"
+	"github.com/TerminalJockey/adk-go/tool/exitlooptool"
 )
 
 // --- Test Suite ---

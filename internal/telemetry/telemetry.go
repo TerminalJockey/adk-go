@@ -31,7 +31,7 @@ import (
 
 	"google.golang.org/adk/internal/version"
 	"google.golang.org/adk/model"
-	"google.golang.org/adk/session"
+	"github.com/TerminalJockey/adk-go/session"
 )
 
 const (

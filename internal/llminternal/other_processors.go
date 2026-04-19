@@ -17,9 +17,9 @@ package llminternal
 import (
 	"iter"
 
-	"google.golang.org/adk/agent"
+	"github.com/TerminalJockey/adk-go/agent"
 	"google.golang.org/adk/model"
-	"google.golang.org/adk/session"
+	"github.com/TerminalJockey/adk-go/session"
 )
 
 func nlPlanningRequestProcessor(ctx agent.InvocationContext, req *model.LLMRequest, f *Flow) iter.Seq2[*session.Event, error] {

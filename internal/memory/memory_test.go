@@ -23,9 +23,9 @@ import (
 	"google.golang.org/genai"
 
 	imemory "google.golang.org/adk/internal/memory"
-	"google.golang.org/adk/memory"
+	"github.com/TerminalJockey/adk-go/memory"
 	"google.golang.org/adk/model"
-	"google.golang.org/adk/session"
+	"github.com/TerminalJockey/adk-go/session"
 )
 
 func TestMemory_AddAndSearch(t *testing.T) {

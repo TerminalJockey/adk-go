@@ -26,12 +26,12 @@ import (
 
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/agent"
-	"google.golang.org/adk/agent/workflowagents/parallelagent"
+	"github.com/TerminalJockey/adk-go/agent"
+	"github.com/TerminalJockey/adk-go/agent/workflowagents/parallelagent"
 	"google.golang.org/adk/cmd/launcher"
 	"google.golang.org/adk/cmd/launcher/full"
 	"google.golang.org/adk/model"
-	"google.golang.org/adk/session"
+	"github.com/TerminalJockey/adk-go/session"
 )
 
 func main() {

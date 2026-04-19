@@ -24,16 +24,16 @@ import (
 
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/agent"
-	"google.golang.org/adk/artifact"
+	"github.com/TerminalJockey/adk-go/agent"
+	"github.com/TerminalJockey/adk-go/artifact"
 	"google.golang.org/adk/internal/llminternal"
 	"google.golang.org/adk/internal/toolinternal/toolutils"
 	"google.golang.org/adk/internal/utils"
-	"google.golang.org/adk/memory"
+	"github.com/TerminalJockey/adk-go/memory"
 	"google.golang.org/adk/model"
-	"google.golang.org/adk/runner"
-	"google.golang.org/adk/session"
-	"google.golang.org/adk/tool"
+	"github.com/TerminalJockey/adk-go/runner"
+	"github.com/TerminalJockey/adk-go/session"
+	"github.com/TerminalJockey/adk-go/tool"
 )
 
 // agentTool implements a tool that allows an agent to call another agent.

@@ -19,12 +19,12 @@ import (
 	"fmt"
 	"net/http"
 
-	"google.golang.org/adk/agent"
-	"google.golang.org/adk/artifact"
-	"google.golang.org/adk/memory"
-	"google.golang.org/adk/runner"
+	"github.com/TerminalJockey/adk-go/agent"
+	"github.com/TerminalJockey/adk-go/artifact"
+	"github.com/TerminalJockey/adk-go/memory"
+	"github.com/TerminalJockey/adk-go/runner"
 	"google.golang.org/adk/server/adkrest/internal/models"
-	"google.golang.org/adk/session"
+	"github.com/TerminalJockey/adk-go/session"
 )
 
 const pubSubDefaultUserID = "pubsub-caller"

@@ -25,7 +25,7 @@ import (
 	"google.golang.org/adk/internal/toolinternal"
 	"google.golang.org/adk/internal/toolinternal/toolutils"
 	"google.golang.org/adk/model"
-	"google.golang.org/adk/tool"
+	"github.com/TerminalJockey/adk-go/tool"
 )
 
 func convertTool(t *mcp.Tool, client MCPClient, requireConfirmation bool, requireConfirmationProvider tool.ConfirmationProvider) (tool.Tool, error) {

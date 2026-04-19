@@ -21,13 +21,13 @@ import (
 	"github.com/google/uuid"
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/agent"
-	"google.golang.org/adk/artifact"
+	"github.com/TerminalJockey/adk-go/agent"
+	"github.com/TerminalJockey/adk-go/artifact"
 	contextinternal "google.golang.org/adk/internal/context"
-	"google.golang.org/adk/memory"
-	"google.golang.org/adk/session"
-	"google.golang.org/adk/tool"
-	"google.golang.org/adk/tool/toolconfirmation"
+	"github.com/TerminalJockey/adk-go/memory"
+	"github.com/TerminalJockey/adk-go/session"
+	"github.com/TerminalJockey/adk-go/tool"
+	"github.com/TerminalJockey/adk-go/tool/toolconfirmation"
 )
 
 type internalArtifacts struct {

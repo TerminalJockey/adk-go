@@ -24,7 +24,7 @@ import (
 	"google.golang.org/genai"
 
 	"google.golang.org/adk/model"
-	"google.golang.org/adk/session"
+	"github.com/TerminalJockey/adk-go/session"
 )
 
 // ExpectedSession represents a snapshot of a session's public state for test comparisons.

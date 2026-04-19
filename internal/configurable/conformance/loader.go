@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"sort"
 
-	"google.golang.org/adk/agent"
+	"github.com/TerminalJockey/adk-go/agent"
 )
 
 type conformanceAgentLoader struct {

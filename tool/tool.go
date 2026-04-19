@@ -24,12 +24,12 @@ import (
 
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/agent"
+	"github.com/TerminalJockey/adk-go/agent"
 	"google.golang.org/adk/internal/toolinternal/toolutils"
-	"google.golang.org/adk/memory"
+	"github.com/TerminalJockey/adk-go/memory"
 	"google.golang.org/adk/model"
-	"google.golang.org/adk/session"
-	"google.golang.org/adk/tool/toolconfirmation"
+	"github.com/TerminalJockey/adk-go/session"
+	"github.com/TerminalJockey/adk-go/tool/toolconfirmation"
 )
 
 // ErrConfirmationRequired indicates that the tool requires confirmation.

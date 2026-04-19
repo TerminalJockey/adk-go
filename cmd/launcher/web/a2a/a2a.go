@@ -27,7 +27,7 @@ import (
 	"google.golang.org/adk/cmd/launcher"
 	"google.golang.org/adk/cmd/launcher/web"
 	"google.golang.org/adk/internal/cli/util"
-	"google.golang.org/adk/runner"
+	"github.com/TerminalJockey/adk-go/runner"
 	"google.golang.org/adk/server/adka2a"
 )
 

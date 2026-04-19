@@ -20,7 +20,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/artifact"
+	"github.com/TerminalJockey/adk-go/artifact"
 	artifactinternal "google.golang.org/adk/internal/artifact"
 )
 

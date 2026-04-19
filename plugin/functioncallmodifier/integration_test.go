@@ -22,17 +22,17 @@ import (
 
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/agent"
-	"google.golang.org/adk/agent/llmagent"
+	"github.com/TerminalJockey/adk-go/agent"
+	"github.com/TerminalJockey/adk-go/agent/llmagent"
 	"google.golang.org/adk/internal/testutil"
 	"google.golang.org/adk/model/gemini"
 	"google.golang.org/adk/plugin"
 	"google.golang.org/adk/plugin/functioncallmodifier"
-	"google.golang.org/adk/runner"
-	"google.golang.org/adk/session"
-	"google.golang.org/adk/tool"
-	"google.golang.org/adk/tool/agenttool"
-	"google.golang.org/adk/tool/functiontool"
+	"github.com/TerminalJockey/adk-go/runner"
+	"github.com/TerminalJockey/adk-go/session"
+	"github.com/TerminalJockey/adk-go/tool"
+	"github.com/TerminalJockey/adk-go/tool/agenttool"
+	"github.com/TerminalJockey/adk-go/tool/functiontool"
 )
 
 //go:generate go test -v -httprecord=testdata/.*\.httprr

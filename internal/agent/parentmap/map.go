@@ -18,7 +18,7 @@ import (
 	"context"
 	"fmt"
 
-	"google.golang.org/adk/agent"
+	"github.com/TerminalJockey/adk-go/agent"
 )
 
 type Map map[string]agent.Agent

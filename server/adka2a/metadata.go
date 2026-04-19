@@ -22,7 +22,7 @@ import (
 	"github.com/a2aproject/a2a-go/a2asrv"
 
 	"google.golang.org/adk/internal/converters"
-	"google.golang.org/adk/session"
+	"github.com/TerminalJockey/adk-go/session"
 )
 
 var (

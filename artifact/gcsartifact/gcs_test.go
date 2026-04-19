@@ -27,7 +27,7 @@ import (
 	"cloud.google.com/go/storage"
 	"google.golang.org/api/iterator"
 
-	"google.golang.org/adk/artifact"
+	"github.com/TerminalJockey/adk-go/artifact"
 	"google.golang.org/adk/internal/artifact/tests"
 )
 

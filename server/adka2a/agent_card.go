@@ -22,8 +22,8 @@ import (
 
 	"github.com/a2aproject/a2a-go/a2a"
 
-	"google.golang.org/adk/agent"
-	"google.golang.org/adk/agent/workflowagents/loopagent"
+	"github.com/TerminalJockey/adk-go/agent"
+	"github.com/TerminalJockey/adk-go/agent/workflowagents/loopagent"
 	iagent "google.golang.org/adk/internal/agent"
 	"google.golang.org/adk/internal/llminternal"
 )

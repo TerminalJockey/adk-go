@@ -24,7 +24,7 @@ import (
 	"google.golang.org/genai"
 
 	"google.golang.org/adk/model"
-	"google.golang.org/adk/session"
+	"github.com/TerminalJockey/adk-go/session"
 )
 
 func modelResponseFromParts(parts ...*genai.Part) model.LLMResponse {

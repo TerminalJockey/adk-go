@@ -27,9 +27,9 @@ import (
 	"time"
 
 	"google.golang.org/adk/internal/utils"
-	"google.golang.org/adk/memory"
+	"github.com/TerminalJockey/adk-go/memory"
 	"google.golang.org/adk/model"
-	"google.golang.org/adk/tool"
+	"github.com/TerminalJockey/adk-go/tool"
 )
 
 const preloadInstructions = `The following content is from your previous conversations with the user.

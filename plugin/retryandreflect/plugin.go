@@ -29,7 +29,7 @@ import (
 	"text/template"
 
 	"google.golang.org/adk/plugin"
-	"google.golang.org/adk/tool"
+	"github.com/TerminalJockey/adk-go/tool"
 
 	_ "embed"
 )

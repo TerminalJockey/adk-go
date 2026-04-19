@@ -22,14 +22,14 @@ import (
 	"os"
 	"path/filepath"
 
-	"google.golang.org/adk/agent"
+	"github.com/TerminalJockey/adk-go/agent"
 	"google.golang.org/adk/cmd/launcher"
 	"google.golang.org/adk/cmd/launcher/full"
 	"google.golang.org/adk/internal/configurable"
 	"google.golang.org/adk/internal/configurable/conformance"
 	"google.golang.org/adk/internal/configurable/conformance/replayplugin"
 	"google.golang.org/adk/plugin"
-	"google.golang.org/adk/runner"
+	"github.com/TerminalJockey/adk-go/runner"
 )
 
 func main() {

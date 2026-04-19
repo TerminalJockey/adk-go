@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/adk/session"
-	"google.golang.org/adk/session/session_test"
+	"github.com/TerminalJockey/adk-go/session"
+	"github.com/TerminalJockey/adk-go/session/session_test"
 )
 
 func Test_inMemoryService(t *testing.T) {

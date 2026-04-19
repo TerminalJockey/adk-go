@@ -22,11 +22,11 @@ import (
 	"github.com/a2aproject/a2a-go/a2a"
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/agent"
+	"github.com/TerminalJockey/adk-go/agent"
 	icontext "google.golang.org/adk/internal/context"
 	"google.golang.org/adk/internal/converters"
 	"google.golang.org/adk/server/adka2a"
-	"google.golang.org/adk/session"
+	"github.com/TerminalJockey/adk-go/session"
 )
 
 type artifactAggregation struct {
