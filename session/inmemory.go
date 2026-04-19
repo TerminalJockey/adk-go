@@ -55,7 +55,7 @@ func (s *rawInMemoryService) DeleteEvent(ctx context.Context, req *DeleteEventRe
 	s.mu.Lock()
 	sess, found := s.sessions.Get(sessionID)
 	if !found {
-		return fmt.Errorf("session_id %q not found")
+		return fmt.Errorf("session_id %s not found", sessionID)
 	}
 	var index *int
 
@@ -68,7 +68,8 @@ func (s *rawInMemoryService) DeleteEvent(ctx context.Context, req *DeleteEventRe
 		return fmt.Errorf("event_id %q not found", eventID)
 	}
 	copy(sess.events[*index:], sess.events[*index+1:])
-	sess.events = sess.events[:len(sess.events)-1]
+	// sess.events = sess.events[:len(sess.events)-1]
+	s.sessions.Set(sessionID, sess)
 	return nil
 }
 
