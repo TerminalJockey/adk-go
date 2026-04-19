@@ -70,6 +70,7 @@ func (s *rawInMemoryService) DeleteEvent(ctx context.Context, req *DeleteEventRe
 	copy(sess.events[*index:], sess.events[*index+1:])
 	// sess.events = sess.events[:len(sess.events)-1]
 	s.sessions.Set(sessionID, sess)
+	s.mu.Unlock()
 	return nil
 }
 
