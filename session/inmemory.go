@@ -53,7 +53,12 @@ func (s *rawInMemoryService) DeleteEvent(ctx context.Context, req *DeleteEventRe
 		return fmt.Errorf("app_name, user_id, session_id, event_id are required, got app_name: %q, user_id: %q, session_id: %q, event_id %q", appName, userID, sessionID, eventID)
 	}
 	s.mu.Lock()
-	sess, found := s.sessions.Get(sessionID)
+	key := id{
+		appName:   req.AppName,
+		userID:    req.UserID,
+		sessionID: sessionID,
+	}
+	sess, found := s.sessions.Get(key.Encode())
 	if !found {
 		return fmt.Errorf("session_id %s not found", sessionID)
 	}
@@ -69,7 +74,7 @@ func (s *rawInMemoryService) DeleteEvent(ctx context.Context, req *DeleteEventRe
 	}
 	copy(sess.events[*index:], sess.events[*index+1:])
 	// sess.events = sess.events[:len(sess.events)-1]
-	s.sessions.Set(sessionID, sess)
+	s.sessions.Set(key.Encode(), sess)
 	s.mu.Unlock()
 	return nil
 }
