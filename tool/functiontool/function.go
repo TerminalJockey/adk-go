@@ -24,9 +24,9 @@ import (
 	"github.com/google/jsonschema-go/jsonschema"
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/internal/toolinternal/toolutils"
-	"google.golang.org/adk/internal/typeutil"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/toolinternal/toolutils"
+	"github.com/TerminalJockey/adk-go/internal/typeutil"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/tool"
 )
 

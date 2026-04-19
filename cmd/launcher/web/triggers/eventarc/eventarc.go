@@ -24,10 +24,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"google.golang.org/adk/cmd/launcher"
-	"google.golang.org/adk/cmd/launcher/web"
-	"google.golang.org/adk/internal/cli/util"
-	"google.golang.org/adk/server/adkrest/controllers/triggers"
+	"github.com/TerminalJockey/adk-go/cmd/launcher"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/web"
+	"github.com/TerminalJockey/adk-go/internal/cli/util"
+	"github.com/TerminalJockey/adk-go/server/adkrest/controllers/triggers"
 )
 
 type eventarcConfig struct {

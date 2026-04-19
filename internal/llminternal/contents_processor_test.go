@@ -26,10 +26,10 @@ import (
 
 	"github.com/TerminalJockey/adk-go/agent"
 	"github.com/TerminalJockey/adk-go/agent/llmagent"
-	icontext "google.golang.org/adk/internal/context"
-	"google.golang.org/adk/internal/llminternal"
-	"google.golang.org/adk/internal/utils"
-	"google.golang.org/adk/model"
+	icontext "github.com/TerminalJockey/adk-go/internal/context"
+	"github.com/TerminalJockey/adk-go/internal/llminternal"
+	"github.com/TerminalJockey/adk-go/internal/utils"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

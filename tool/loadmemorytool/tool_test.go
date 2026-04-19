@@ -22,10 +22,10 @@ import (
 
 	"google.golang.org/genai"
 
-	icontext "google.golang.org/adk/internal/context"
-	"google.golang.org/adk/internal/toolinternal"
+	icontext "github.com/TerminalJockey/adk-go/internal/context"
+	"github.com/TerminalJockey/adk-go/internal/toolinternal"
 	"github.com/TerminalJockey/adk-go/memory"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/session"
 	"github.com/TerminalJockey/adk-go/tool"
 	"github.com/TerminalJockey/adk-go/tool/loadmemorytool"

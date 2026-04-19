@@ -27,8 +27,8 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/cmd/launcher"
-	"google.golang.org/adk/cmd/launcher/web"
+	"github.com/TerminalJockey/adk-go/cmd/launcher"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/web"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

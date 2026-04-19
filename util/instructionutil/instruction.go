@@ -19,8 +19,8 @@ import (
 	"fmt"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	icontext "google.golang.org/adk/internal/context"
-	"google.golang.org/adk/internal/llminternal"
+	icontext "github.com/TerminalJockey/adk-go/internal/context"
+	"github.com/TerminalJockey/adk-go/internal/llminternal"
 )
 
 // InjectSessionState populates values in the instruction template, e.g. state,

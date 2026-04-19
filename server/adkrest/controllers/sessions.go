@@ -21,7 +21,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"google.golang.org/adk/server/adkrest/internal/models"
+	"github.com/TerminalJockey/adk-go/server/adkrest/internal/models"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

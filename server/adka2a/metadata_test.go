@@ -21,7 +21,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

@@ -26,9 +26,9 @@ import (
 	"github.com/a2aproject/a2a-go/a2aclient/agentcard"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	agentinternal "google.golang.org/adk/internal/agent"
-	iremoteagent "google.golang.org/adk/internal/agent/remoteagent"
-	"google.golang.org/adk/server/adka2a"
+	agentinternal "github.com/TerminalJockey/adk-go/internal/agent"
+	iremoteagent "github.com/TerminalJockey/adk-go/internal/agent/remoteagent"
+	"github.com/TerminalJockey/adk-go/server/adka2a"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

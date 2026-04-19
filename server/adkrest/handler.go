@@ -27,9 +27,9 @@ import (
 	"github.com/TerminalJockey/adk-go/artifact"
 	"github.com/TerminalJockey/adk-go/memory"
 	"github.com/TerminalJockey/adk-go/runner"
-	"google.golang.org/adk/server/adkrest/controllers"
-	"google.golang.org/adk/server/adkrest/internal/routers"
-	"google.golang.org/adk/server/adkrest/internal/services"
+	"github.com/TerminalJockey/adk-go/server/adkrest/controllers"
+	"github.com/TerminalJockey/adk-go/server/adkrest/internal/routers"
+	"github.com/TerminalJockey/adk-go/server/adkrest/internal/services"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

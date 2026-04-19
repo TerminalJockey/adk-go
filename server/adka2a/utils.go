@@ -18,8 +18,8 @@ import (
 	"github.com/a2aproject/a2a-go/a2a"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	iagent "google.golang.org/adk/internal/agent"
-	iremoteagent "google.golang.org/adk/internal/agent/remoteagent"
+	iagent "github.com/TerminalJockey/adk-go/internal/agent"
+	iremoteagent "github.com/TerminalJockey/adk-go/internal/agent/remoteagent"
 )
 
 // WithoutPartialArtifacts returns a slice of artifacts without partial artifacts.

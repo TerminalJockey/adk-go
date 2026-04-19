@@ -23,12 +23,12 @@ import (
 	"path/filepath"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/cmd/launcher"
-	"google.golang.org/adk/cmd/launcher/full"
-	"google.golang.org/adk/internal/configurable"
-	"google.golang.org/adk/internal/configurable/conformance"
-	"google.golang.org/adk/internal/configurable/conformance/replayplugin"
-	"google.golang.org/adk/plugin"
+	"github.com/TerminalJockey/adk-go/cmd/launcher"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/full"
+	"github.com/TerminalJockey/adk-go/internal/configurable"
+	"github.com/TerminalJockey/adk-go/internal/configurable/conformance"
+	"github.com/TerminalJockey/adk-go/internal/configurable/conformance/replayplugin"
+	"github.com/TerminalJockey/adk-go/plugin"
 	"github.com/TerminalJockey/adk-go/runner"
 )
 

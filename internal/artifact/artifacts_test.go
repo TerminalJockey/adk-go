@@ -21,7 +21,7 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/artifact"
-	artifactinternal "google.golang.org/adk/internal/artifact"
+	artifactinternal "github.com/TerminalJockey/adk-go/internal/artifact"
 )
 
 func TestArtifacts(t *testing.T) {

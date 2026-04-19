@@ -26,8 +26,8 @@ import (
 	"github.com/TerminalJockey/adk-go/agent/workflowagents/loopagent"
 	"github.com/TerminalJockey/adk-go/agent/workflowagents/parallelagent"
 	"github.com/TerminalJockey/adk-go/agent/workflowagents/sequentialagent"
-	"google.golang.org/adk/internal/llminternal/googlellm"
-	"google.golang.org/adk/model/gemini"
+	"github.com/TerminalJockey/adk-go/internal/llminternal/googlellm"
+	"github.com/TerminalJockey/adk-go/model/gemini"
 	"github.com/TerminalJockey/adk-go/tool"
 )
 

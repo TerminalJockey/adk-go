@@ -27,9 +27,9 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/internal/httprr"
-	"google.golang.org/adk/internal/testutil"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/httprr"
+	"github.com/TerminalJockey/adk-go/internal/testutil"
+	"github.com/TerminalJockey/adk-go/model"
 )
 
 //go:generate go test -httprecord=testdata/.*\.httprr

@@ -22,8 +22,8 @@ import (
 	"golang.org/x/sync/errgroup"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	agentinternal "google.golang.org/adk/internal/agent"
-	icontext "google.golang.org/adk/internal/context"
+	agentinternal "github.com/TerminalJockey/adk-go/internal/agent"
+	icontext "github.com/TerminalJockey/adk-go/internal/context"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

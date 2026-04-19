@@ -31,9 +31,9 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/internal/utils"
-	"google.golang.org/adk/model"
-	"google.golang.org/adk/plugin"
+	"github.com/TerminalJockey/adk-go/internal/utils"
+	"github.com/TerminalJockey/adk-go/model"
+	"github.com/TerminalJockey/adk-go/plugin"
 	"github.com/TerminalJockey/adk-go/runner"
 	"github.com/TerminalJockey/adk-go/session"
 )

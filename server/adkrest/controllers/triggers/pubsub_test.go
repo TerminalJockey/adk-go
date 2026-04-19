@@ -30,9 +30,9 @@ import (
 	"github.com/TerminalJockey/adk-go/agent"
 
 	"github.com/TerminalJockey/adk-go/runner"
-	"google.golang.org/adk/server/adkrest/controllers/triggers"
-	"google.golang.org/adk/server/adkrest/internal/fakes"
-	"google.golang.org/adk/server/adkrest/internal/models"
+	"github.com/TerminalJockey/adk-go/server/adkrest/controllers/triggers"
+	"github.com/TerminalJockey/adk-go/server/adkrest/internal/fakes"
+	"github.com/TerminalJockey/adk-go/server/adkrest/internal/models"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

@@ -24,8 +24,8 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent/llmagent"
-	"google.golang.org/adk/internal/testutil"
-	"google.golang.org/adk/internal/toolinternal"
+	"github.com/TerminalJockey/adk-go/internal/testutil"
+	"github.com/TerminalJockey/adk-go/internal/toolinternal"
 	"github.com/TerminalJockey/adk-go/tool"
 	"github.com/TerminalJockey/adk-go/tool/functiontool"
 )

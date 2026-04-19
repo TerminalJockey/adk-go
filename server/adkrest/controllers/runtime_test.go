@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/adk/plugin"
+	"github.com/TerminalJockey/adk-go/plugin"
 	"github.com/TerminalJockey/adk-go/runner"
 )
 

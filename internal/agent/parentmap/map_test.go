@@ -21,9 +21,9 @@ import (
 
 	"github.com/TerminalJockey/adk-go/agent"
 	"github.com/TerminalJockey/adk-go/agent/llmagent"
-	"google.golang.org/adk/internal/agent/parentmap"
-	"google.golang.org/adk/internal/utils"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/agent/parentmap"
+	"github.com/TerminalJockey/adk-go/internal/utils"
+	"github.com/TerminalJockey/adk-go/model"
 )
 
 func TestNew(t *testing.T) {

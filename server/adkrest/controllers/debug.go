@@ -24,8 +24,8 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/server/adkrest/internal/models"
-	"google.golang.org/adk/server/adkrest/internal/services"
+	"github.com/TerminalJockey/adk-go/server/adkrest/internal/models"
+	"github.com/TerminalJockey/adk-go/server/adkrest/internal/services"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

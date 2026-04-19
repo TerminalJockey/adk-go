@@ -21,8 +21,8 @@ import (
 
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/internal/utils"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/utils"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/tool"
 )
 

@@ -25,10 +25,10 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/internal/agent/parentmap"
-	"google.golang.org/adk/internal/toolinternal"
-	"google.golang.org/adk/internal/utils"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/agent/parentmap"
+	"github.com/TerminalJockey/adk-go/internal/toolinternal"
+	"github.com/TerminalJockey/adk-go/internal/utils"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/session"
 	"github.com/TerminalJockey/adk-go/tool"
 )

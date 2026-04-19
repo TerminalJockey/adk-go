@@ -23,11 +23,11 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/artifact"
-	agentinternal "google.golang.org/adk/internal/agent"
-	"google.golang.org/adk/internal/plugininternal/plugincontext"
-	"google.golang.org/adk/internal/telemetry"
+	agentinternal "github.com/TerminalJockey/adk-go/internal/agent"
+	"github.com/TerminalJockey/adk-go/internal/plugininternal/plugincontext"
+	"github.com/TerminalJockey/adk-go/internal/telemetry"
 	"github.com/TerminalJockey/adk-go/memory"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

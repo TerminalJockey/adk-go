@@ -26,8 +26,8 @@ import (
 
 	"github.com/TerminalJockey/adk-go/agent"
 	"github.com/TerminalJockey/adk-go/agent/llmagent"
-	"google.golang.org/adk/model/gemini"
-	"google.golang.org/adk/server/adkrest"
+	"github.com/TerminalJockey/adk-go/model/gemini"
+	"github.com/TerminalJockey/adk-go/server/adkrest"
 	"github.com/TerminalJockey/adk-go/session"
 	"github.com/TerminalJockey/adk-go/tool"
 	"github.com/TerminalJockey/adk-go/tool/geminitool"

@@ -21,7 +21,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"google.golang.org/adk/cmd/launcher"
+	"github.com/TerminalJockey/adk-go/cmd/launcher"
 )
 
 func TestParse(t *testing.T) {

@@ -22,9 +22,9 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"google.golang.org/genai"
 
-	imemory "google.golang.org/adk/internal/memory"
+	imemory "github.com/TerminalJockey/adk-go/internal/memory"
 	"github.com/TerminalJockey/adk-go/memory"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

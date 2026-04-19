@@ -21,7 +21,7 @@ import (
 	"math"
 	"regexp"
 
-	"google.golang.org/adk/internal/configurable"
+	"github.com/TerminalJockey/adk-go/internal/configurable"
 	"github.com/TerminalJockey/adk-go/tool"
 	"github.com/TerminalJockey/adk-go/tool/functiontool"
 )

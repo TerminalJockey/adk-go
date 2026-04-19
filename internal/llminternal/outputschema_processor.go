@@ -22,10 +22,10 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/internal/llminternal/googlellm"
-	"google.golang.org/adk/internal/toolinternal/toolutils"
-	"google.golang.org/adk/internal/utils"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/llminternal/googlellm"
+	"github.com/TerminalJockey/adk-go/internal/toolinternal/toolutils"
+	"github.com/TerminalJockey/adk-go/internal/utils"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/session"
 	"github.com/TerminalJockey/adk-go/tool"
 )

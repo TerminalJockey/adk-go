@@ -25,10 +25,10 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/internal/configurable/conformance/replayplugin"
+	"github.com/TerminalJockey/adk-go/internal/configurable/conformance/replayplugin"
 	"github.com/TerminalJockey/adk-go/memory"
-	"google.golang.org/adk/model"
-	"google.golang.org/adk/plugin"
+	"github.com/TerminalJockey/adk-go/model"
+	"github.com/TerminalJockey/adk-go/plugin"
 	"github.com/TerminalJockey/adk-go/session"
 	"github.com/TerminalJockey/adk-go/tool/toolconfirmation"
 )

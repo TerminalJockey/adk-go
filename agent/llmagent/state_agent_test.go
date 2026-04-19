@@ -29,8 +29,8 @@ import (
 
 	"github.com/TerminalJockey/adk-go/agent"
 	"github.com/TerminalJockey/adk-go/agent/llmagent"
-	"google.golang.org/adk/internal/utils"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/utils"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/runner"
 	"github.com/TerminalJockey/adk-go/session"
 	"github.com/TerminalJockey/adk-go/tool"

@@ -18,7 +18,7 @@ import (
 	"testing"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	contextinternal "google.golang.org/adk/internal/context"
+	contextinternal "github.com/TerminalJockey/adk-go/internal/context"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

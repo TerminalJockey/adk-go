@@ -24,7 +24,7 @@ import (
 
 	"github.com/TerminalJockey/adk-go/agent"
 	"github.com/TerminalJockey/adk-go/agent/llmagent"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/tool"
 	"github.com/TerminalJockey/adk-go/tool/functiontool"
 	"github.com/TerminalJockey/adk-go/tool/loadartifactstool"

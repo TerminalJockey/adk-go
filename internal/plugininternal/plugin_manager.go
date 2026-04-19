@@ -22,9 +22,9 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/internal/plugininternal/plugincontext"
-	"google.golang.org/adk/model"
-	"google.golang.org/adk/plugin"
+	"github.com/TerminalJockey/adk-go/internal/plugininternal/plugincontext"
+	"github.com/TerminalJockey/adk-go/model"
+	"github.com/TerminalJockey/adk-go/plugin"
 	"github.com/TerminalJockey/adk-go/session"
 	"github.com/TerminalJockey/adk-go/tool"
 )

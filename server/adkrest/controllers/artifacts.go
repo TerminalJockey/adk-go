@@ -21,7 +21,7 @@ import (
 	"github.com/gorilla/mux"
 
 	"github.com/TerminalJockey/adk-go/artifact"
-	"google.golang.org/adk/server/adkrest/internal/models"
+	"github.com/TerminalJockey/adk-go/server/adkrest/internal/models"
 )
 
 // ArtifactsAPIController is the controller for the Artifacts API.

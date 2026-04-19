@@ -22,8 +22,8 @@ import (
 	"github.com/awalterschulze/gographviz"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	agentinternal "google.golang.org/adk/internal/agent"
-	llmagentinternal "google.golang.org/adk/internal/llminternal"
+	agentinternal "github.com/TerminalJockey/adk-go/internal/agent"
+	llmagentinternal "github.com/TerminalJockey/adk-go/internal/llminternal"
 	"github.com/TerminalJockey/adk-go/tool"
 )
 

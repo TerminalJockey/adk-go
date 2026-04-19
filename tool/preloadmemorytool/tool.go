@@ -26,9 +26,9 @@ import (
 	"strings"
 	"time"
 
-	"google.golang.org/adk/internal/utils"
+	"github.com/TerminalJockey/adk-go/internal/utils"
 	"github.com/TerminalJockey/adk-go/memory"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/tool"
 )
 

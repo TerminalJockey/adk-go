@@ -21,7 +21,7 @@ import (
 	"github.com/a2aproject/a2a-go/a2a"
 	"github.com/a2aproject/a2a-go/a2asrv"
 
-	"google.golang.org/adk/internal/converters"
+	"github.com/TerminalJockey/adk-go/internal/converters"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

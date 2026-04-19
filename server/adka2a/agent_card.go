@@ -24,8 +24,8 @@ import (
 
 	"github.com/TerminalJockey/adk-go/agent"
 	"github.com/TerminalJockey/adk-go/agent/workflowagents/loopagent"
-	iagent "google.golang.org/adk/internal/agent"
-	"google.golang.org/adk/internal/llminternal"
+	iagent "github.com/TerminalJockey/adk-go/internal/agent"
+	"github.com/TerminalJockey/adk-go/internal/llminternal"
 )
 
 // BuildAgentSkills attempts to create a list of [a2a.AgentSkill]s based on agent descriptions and types.

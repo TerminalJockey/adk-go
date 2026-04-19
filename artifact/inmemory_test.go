@@ -18,7 +18,7 @@ import (
 	"testing"
 
 	"github.com/TerminalJockey/adk-go/artifact"
-	"google.golang.org/adk/internal/artifact/tests"
+	"github.com/TerminalJockey/adk-go/internal/artifact/tests"
 )
 
 func TestInMemoryArtifactService(t *testing.T) {

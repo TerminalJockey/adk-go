@@ -20,8 +20,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/internal/toolinternal"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/toolinternal"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/tool/geminitool"
 )
 

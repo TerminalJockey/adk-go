@@ -24,7 +24,7 @@ import (
 	"github.com/TerminalJockey/adk-go/agent"
 	"github.com/TerminalJockey/adk-go/agent/llmagent"
 	"github.com/TerminalJockey/adk-go/agent/workflowagents/loopagent"
-	"google.golang.org/adk/internal/testutil"
+	"github.com/TerminalJockey/adk-go/internal/testutil"
 	"github.com/TerminalJockey/adk-go/tool"
 	"github.com/TerminalJockey/adk-go/tool/exitlooptool"
 )

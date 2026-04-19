@@ -21,7 +21,7 @@ import (
 	"iter"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	agentinternal "google.golang.org/adk/internal/agent"
+	agentinternal "github.com/TerminalJockey/adk-go/internal/agent"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

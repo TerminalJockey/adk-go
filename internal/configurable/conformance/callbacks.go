@@ -21,7 +21,7 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/internal/configurable"
+	"github.com/TerminalJockey/adk-go/internal/configurable"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

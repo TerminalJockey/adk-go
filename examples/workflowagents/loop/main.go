@@ -25,9 +25,9 @@ import (
 
 	"github.com/TerminalJockey/adk-go/agent"
 	"github.com/TerminalJockey/adk-go/agent/workflowagents/loopagent"
-	"google.golang.org/adk/cmd/launcher"
-	"google.golang.org/adk/cmd/launcher/full"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/cmd/launcher"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/full"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

@@ -24,8 +24,8 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/internal/llminternal"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/llminternal"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/runner"
 	"github.com/TerminalJockey/adk-go/session"
 )

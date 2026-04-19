@@ -23,9 +23,9 @@ import (
 
 	"github.com/TerminalJockey/adk-go/agent"
 	"github.com/TerminalJockey/adk-go/agent/llmagent"
-	"google.golang.org/adk/cmd/launcher"
-	"google.golang.org/adk/cmd/launcher/full"
-	"google.golang.org/adk/model/gemini"
+	"github.com/TerminalJockey/adk-go/cmd/launcher"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/full"
+	"github.com/TerminalJockey/adk-go/model/gemini"
 	"github.com/TerminalJockey/adk-go/session/vertexai"
 	"github.com/TerminalJockey/adk-go/tool"
 	"github.com/TerminalJockey/adk-go/tool/geminitool"

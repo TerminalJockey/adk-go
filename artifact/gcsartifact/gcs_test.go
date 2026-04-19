@@ -28,7 +28,7 @@ import (
 	"google.golang.org/api/iterator"
 
 	"github.com/TerminalJockey/adk-go/artifact"
-	"google.golang.org/adk/internal/artifact/tests"
+	"github.com/TerminalJockey/adk-go/internal/artifact/tests"
 )
 
 // newGCSArtifactServiceForTesting creates a gcsService for the specified bucket using a mocked inmemory client

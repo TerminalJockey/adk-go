@@ -25,11 +25,11 @@ import (
 
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/internal/llminternal"
-	"google.golang.org/adk/internal/llminternal/converters"
-	"google.golang.org/adk/internal/llminternal/googlellm"
-	"google.golang.org/adk/internal/version"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/llminternal"
+	"github.com/TerminalJockey/adk-go/internal/llminternal/converters"
+	"github.com/TerminalJockey/adk-go/internal/llminternal/googlellm"
+	"github.com/TerminalJockey/adk-go/internal/version"
+	"github.com/TerminalJockey/adk-go/model"
 )
 
 // TODO: test coverage

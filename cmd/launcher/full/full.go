@@ -16,15 +16,15 @@
 package full
 
 import (
-	"google.golang.org/adk/cmd/launcher"
-	"google.golang.org/adk/cmd/launcher/console"
-	"google.golang.org/adk/cmd/launcher/universal"
-	"google.golang.org/adk/cmd/launcher/web"
-	"google.golang.org/adk/cmd/launcher/web/a2a"
-	"google.golang.org/adk/cmd/launcher/web/api"
-	"google.golang.org/adk/cmd/launcher/web/triggers/eventarc"
-	"google.golang.org/adk/cmd/launcher/web/triggers/pubsub"
-	"google.golang.org/adk/cmd/launcher/web/webui"
+	"github.com/TerminalJockey/adk-go/cmd/launcher"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/console"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/universal"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/web"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/web/a2a"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/web/api"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/web/triggers/eventarc"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/web/triggers/pubsub"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/web/webui"
 )
 
 // NewLauncher returnes the most versatile universal launcher with all options built-in.

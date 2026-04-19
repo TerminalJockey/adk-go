@@ -17,7 +17,7 @@ package geminitool
 import (
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/tool"
 )
 

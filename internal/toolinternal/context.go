@@ -23,7 +23,7 @@ import (
 
 	"github.com/TerminalJockey/adk-go/agent"
 	"github.com/TerminalJockey/adk-go/artifact"
-	contextinternal "google.golang.org/adk/internal/context"
+	contextinternal "github.com/TerminalJockey/adk-go/internal/context"
 	"github.com/TerminalJockey/adk-go/memory"
 	"github.com/TerminalJockey/adk-go/session"
 	"github.com/TerminalJockey/adk-go/tool"

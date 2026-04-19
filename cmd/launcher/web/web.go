@@ -27,10 +27,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"google.golang.org/adk/cmd/launcher"
-	"google.golang.org/adk/cmd/launcher/internal/telemetry"
-	"google.golang.org/adk/cmd/launcher/universal"
-	"google.golang.org/adk/internal/cli/util"
+	"github.com/TerminalJockey/adk-go/cmd/launcher"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/internal/telemetry"
+	"github.com/TerminalJockey/adk-go/cmd/launcher/universal"
+	"github.com/TerminalJockey/adk-go/internal/cli/util"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

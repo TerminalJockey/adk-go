@@ -23,10 +23,10 @@ import (
 	"unicode"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/internal/agent/parentmap"
-	icontext "google.golang.org/adk/internal/context"
-	"google.golang.org/adk/internal/utils"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/agent/parentmap"
+	icontext "github.com/TerminalJockey/adk-go/internal/context"
+	"github.com/TerminalJockey/adk-go/internal/utils"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

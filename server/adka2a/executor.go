@@ -30,8 +30,8 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	iremoteagent "google.golang.org/adk/internal/agent/remoteagent"
-	"google.golang.org/adk/plugin"
+	iremoteagent "github.com/TerminalJockey/adk-go/internal/agent/remoteagent"
+	"github.com/TerminalJockey/adk-go/plugin"
 	"github.com/TerminalJockey/adk-go/runner"
 	"github.com/TerminalJockey/adk-go/session"
 )

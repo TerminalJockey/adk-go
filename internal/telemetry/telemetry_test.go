@@ -29,7 +29,7 @@ import (
 	"go.opentelemetry.io/otel/trace/noop"
 	"google.golang.org/genai"
 
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

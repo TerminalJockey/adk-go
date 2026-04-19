@@ -23,9 +23,9 @@ import (
 	"google.golang.org/genai"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	icontext "google.golang.org/adk/internal/context"
-	"google.golang.org/adk/internal/converters"
-	"google.golang.org/adk/server/adka2a"
+	icontext "github.com/TerminalJockey/adk-go/internal/context"
+	"github.com/TerminalJockey/adk-go/internal/converters"
+	"github.com/TerminalJockey/adk-go/server/adka2a"
 	"github.com/TerminalJockey/adk-go/session"
 )
 

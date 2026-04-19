@@ -21,7 +21,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/tool/toolconfirmation"
 )
 

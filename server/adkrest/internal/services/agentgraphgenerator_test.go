@@ -28,8 +28,8 @@ import (
 	"github.com/TerminalJockey/adk-go/agent/workflowagents/loopagent"
 	"github.com/TerminalJockey/adk-go/agent/workflowagents/parallelagent"
 	"github.com/TerminalJockey/adk-go/agent/workflowagents/sequentialagent"
-	agentinternal "google.golang.org/adk/internal/agent"
-	"google.golang.org/adk/model"
+	agentinternal "github.com/TerminalJockey/adk-go/internal/agent"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/tool"
 )
 

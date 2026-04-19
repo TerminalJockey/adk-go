@@ -25,7 +25,7 @@ import (
 	"github.com/TerminalJockey/adk-go/memory"
 	"github.com/TerminalJockey/adk-go/runner"
 	"github.com/TerminalJockey/adk-go/session"
-	"google.golang.org/adk/telemetry"
+	"github.com/TerminalJockey/adk-go/telemetry"
 )
 
 // Launcher is the main interface for running an ADK application.

@@ -30,8 +30,8 @@ import (
 
 	"github.com/TerminalJockey/adk-go/agent"
 	"github.com/TerminalJockey/adk-go/agent/llmagent"
-	"google.golang.org/adk/model"
-	"google.golang.org/adk/model/gemini"
+	"github.com/TerminalJockey/adk-go/model"
+	"github.com/TerminalJockey/adk-go/model/gemini"
 	"github.com/TerminalJockey/adk-go/runner"
 	"github.com/TerminalJockey/adk-go/session"
 	"github.com/TerminalJockey/adk-go/tool"

@@ -18,8 +18,8 @@ import (
 	"iter"
 
 	"github.com/TerminalJockey/adk-go/agent"
-	"google.golang.org/adk/internal/llminternal/googlellm"
-	"google.golang.org/adk/model"
+	"github.com/TerminalJockey/adk-go/internal/llminternal/googlellm"
+	"github.com/TerminalJockey/adk-go/model"
 	"github.com/TerminalJockey/adk-go/session"
 )
 
