@@ -41,7 +41,16 @@ func InMemoryService() Service {
 
 type RawService interface {
 	Service
-	DeleteEvent()
+	DeleteEvent(ctx context.Context, req *DeleteEventRequest) error
+}
+
+func RawInMemoryService() RawService {
+	return &rawInMemoryService{
+		inMemoryService{
+			appState:  make(map[string]stateMap),
+			userState: make(map[string]map[string]stateMap),
+		},
+	}
 }
 
 // CreateRequest represents a request to create a session.
