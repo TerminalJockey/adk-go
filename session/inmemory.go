@@ -52,17 +52,17 @@ func (s *rawInMemoryService) DeleteEventsByAuthor(ctx context.Context, req *Dele
 	if appName == "" || userID == "" || sessionID == "" {
 		return fmt.Errorf("app_name, user_id, session_id, event_id are required, got app_name: %q, user_id: %q, session_id: %q, author %q", appName, userID, sessionID, author), 0
 	}
-	s.mu.Lock()
-	defer s.mu.Unlock()
 	key := id{
 		appName:   req.AppName,
 		userID:    req.UserID,
 		sessionID: sessionID,
 	}
+	s.mu.Lock()
 	sess, found := s.sessions.Get(key.Encode())
 	if !found {
 		return fmt.Errorf("session_id %s not found", sessionID), 0
 	}
+	s.mu.Unlock()
 	var eventsToDelete []string
 	// keep last event to coax conversation flow
 	for x := 0; x < len(sess.events)-1; x++ {
