@@ -63,7 +63,8 @@ func (s *rawInMemoryService) DeleteEventsByAuthor(ctx context.Context, req *Dele
 		return fmt.Errorf("session_id %s not found", sessionID), 0
 	}
 	var eventsToDelete []string
-	for x := range sess.events {
+	// keep last event to coax conversation flow
+	for x := 0; x < len(sess.events)-1; x++ {
 		if sess.events[x].Author == author {
 			eventsToDelete = append(eventsToDelete, sess.events[x].ID)
 		}
