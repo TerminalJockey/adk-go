@@ -42,6 +42,7 @@ func InMemoryService() Service {
 type RawService interface {
 	Service
 	DeleteEvent(ctx context.Context, req *DeleteEventRequest) error
+	DeleteEventsByAuthor(ctx context.Context, req *DeleteEvenstByAuthorRequest) (error, int)
 }
 
 func RawInMemoryService() RawService {
