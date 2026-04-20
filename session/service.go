@@ -112,3 +112,10 @@ type DeleteEventRequest struct {
 	SessionID string
 	EventID   string
 }
+
+type DeleteEvenstByAuthorRequest struct {
+	AppName   string
+	UserID    string
+	SessionID string
+	Author    string
+}

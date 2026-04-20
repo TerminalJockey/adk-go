@@ -47,6 +47,43 @@ type rawInMemoryService struct {
 	inMemoryService
 }
 
+func (s *rawInMemoryService) DeleteEventsByAuthor(ctx context.Context, req *DeleteEvenstByAuthorRequest) (error, int) {
+	appName, userID, sessionID, author := req.AppName, req.UserID, req.SessionID, req.Author
+	if appName == "" || userID == "" || sessionID == "" {
+		return fmt.Errorf("app_name, user_id, session_id, event_id are required, got app_name: %q, user_id: %q, session_id: %q, author %q", appName, userID, sessionID, author), 0
+	}
+	s.mu.Lock()
+	key := id{
+		appName:   req.AppName,
+		userID:    req.UserID,
+		sessionID: sessionID,
+	}
+	sess, found := s.sessions.Get(key.Encode())
+	if !found {
+		return fmt.Errorf("session_id %s not found", sessionID), 0
+	}
+	var eventsToDelete []string
+	for x := range sess.events {
+		if sess.events[x].Author == author {
+			eventsToDelete = append(eventsToDelete, sess.events[x].ID)
+		}
+	}
+	deletedCount := 0
+	for x := range eventsToDelete {
+		err := s.DeleteEvent(ctx, &DeleteEventRequest{
+			AppName:   appName,
+			UserID:    userID,
+			SessionID: sessionID,
+			EventID:   eventsToDelete[x],
+		})
+		if err != nil {
+			return err, deletedCount
+		}
+		deletedCount++
+	}
+	return nil, deletedCount
+}
+
 func (s *rawInMemoryService) DeleteEvent(ctx context.Context, req *DeleteEventRequest) error {
 	appName, userID, sessionID, eventID := req.AppName, req.UserID, req.SessionID, req.EventID
 	if appName == "" || userID == "" || sessionID == "" {
@@ -73,7 +110,6 @@ func (s *rawInMemoryService) DeleteEvent(ctx context.Context, req *DeleteEventRe
 		return fmt.Errorf("event_id %q not found", eventID)
 	}
 	copy(sess.events[*index:], sess.events[*index+1:])
-	// sess.events = sess.events[:len(sess.events)-1]
 	s.sessions.Set(key.Encode(), sess)
 	s.mu.Unlock()
 	return nil
