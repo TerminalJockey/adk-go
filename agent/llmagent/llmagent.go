@@ -445,3 +445,24 @@ func (a *llmAgent) FindAgent(name string) agent.Agent {
 // placeholders into the instruction. You can use
 // util/instructionutil.InjectSessionState() helper if this functionality is needed.
 type InstructionProvider func(ctx agent.ReadonlyContext) (string, error)
+
+// BEGIN TJ EDIT
+
+type RawLLMAgent interface {
+	llmAgent
+	AddTool()
+}
+
+type rawLLMAgent struct {
+	llmAgent
+}
+
+func (r *rawLLMAgent) AddTool(t tool.Tool) {
+	r.Tools = append(r.Tools, t)
+	r.State.Tools = append(r.State.Tools, t)
+}
+
+func (r *rawLLMAgent) AddToolset(t tool.Toolset) {
+	r.Toolsets = append(r.Toolsets, t)
+	r.State.Toolsets = append(r.State.Toolsets, t)
+}
