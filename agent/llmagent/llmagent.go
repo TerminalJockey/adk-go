@@ -465,5 +465,16 @@ func (r *rawLLMAgent) AddTool(t tool.Tool) {
 func (r *rawLLMAgent) AddToolset(t tool.Toolset) {
 	r.Toolsets = append(r.Toolsets, t)
 	r.State.Toolsets = append(r.State.Toolsets, t)
+}
 
+func (r *rawLLMAgent) RevealAgent() *agent.Agent {
+	return &r.Agent
+}
+
+func (r *rawLLMAgent) RevealInternalState() *llminternal.State {
+	return &r.State
+}
+
+func (r *rawLLMAgent) RevealAgentState() *agentState {
+	return &r.agentState
 }
