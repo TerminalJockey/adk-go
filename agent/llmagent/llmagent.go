@@ -465,4 +465,5 @@ func (r *rawLLMAgent) AddTool(t tool.Tool) {
 func (r *rawLLMAgent) AddToolset(t tool.Toolset) {
 	r.Toolsets = append(r.Toolsets, t)
 	r.State.Toolsets = append(r.State.Toolsets, t)
+
 }
